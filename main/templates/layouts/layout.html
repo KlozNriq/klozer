@@ -1,0 +1,57 @@
+{%load static%}
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8" />
+    <title>
+        Kloz |
+        {% block title %} {% endblock %} 
+    </title>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/styles.css' %}"/>  
+</head>
+
+<div class="cabecera">
+
+    <header>
+        <div id="logotipo">
+            <img src="{% static 'images/logo.png '%}"/>
+        </div>
+
+        <nav>
+            <ul>
+                <li>
+                    <a href="{% url 'index' %}">Inicio</a>
+                </li>
+                <li>
+                    <a href="{% url 'about' %}">Nosotros</a>
+                </li>
+                <li>
+                    <a href="{% url 'services' %}">Servicios</a>
+                </li>
+                <li>
+                    <a href="{% url 'projects' %}">Proyectos</a>
+                </li>
+                <li>
+                    <a href="{% url 'contact' %}">Contacto</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+</div>
+
+<body>
+<div class="imagenfondo">
+    {% block imagen %} {%endblock%}
+</div>
+<section>
+        {% block aim %}    {%endblock%}
+        {% block content %} <!-- El contenido de cada pagina --> {% endblock %}
+</section>
+    
+<footer> Kloz Nriq &copy, Lima - Perú </footer>
+
+</body>
+</html>
+
+<!-- <img src='static/images/background.png'/> -->
