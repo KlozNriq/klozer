@@ -111,6 +111,7 @@ body{
 
 .boxright, .boxright1{
     flex: 30%;
+    min-width: 760px;
 }
 
 .boxright img, .boxright1 img{
