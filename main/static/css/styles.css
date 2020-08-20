@@ -100,6 +100,26 @@ body{
 .second{
     background-color:#212025;
     padding: 70px 15% 70px 15%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: auto;
+}
+
+.second img{
+    width: auto;
+    height: auto;
+    padding: 5px;
+}
+
+.second_item:nth-child(1){
+    grid-row-start: span 2;
+    margin: auto;
+}
+
+@media (max-width:1024px) {
+    .second{
+    grid-template-columns: repeat(1, 1fr);
+}
 }
 
 /*
