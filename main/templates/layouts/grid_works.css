@@ -1,0 +1,113 @@
+
+.gallery-container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: auto;
+    padding: 50px;
+    grid-gap: 50px;
+}
+
+.gallery__item{
+    position: relative;
+}
+
+.gallery__img{
+    width: 400px;
+    height: 400px;
+    object-fit: cover;
+}
+
+.gallery__title{
+    position: absolute;
+    bottom: 0;
+    color: bisque;
+    width: 50%;
+    margin: 0;
+    padding: 15px;
+    background: linear-gradient(rgba(255,255,255,0),rgba(0,0,0,1));
+}
+
+.gallery__item:nth-child(1) {
+    grid-column-start: span 2;
+    grid-row-start: span 1;
+}
+
+.gallery__item:nth-child(2) {
+    grid-column-start: span 3;
+    grid-row-start: span 1;
+}
+
+.gallery__item:nth-child(3) {
+    grid-column-start: span 3;
+    grid-row-start: span 1;
+}
+
+.gallery__item:nth-child(4) {
+    grid-column-start: span 3;
+    grid-row-start: span 1;
+}
+
+.gallery__item:nth-child(5) {
+    grid-column-start: span 3;
+    grid-row-start: span 1;
+}
+
+@media (min-width:768px) {
+    .gallery-container{
+    grid-template-columns: repeat(2, 1fr);
+    margin: auto;
+    background: blue;
+}
+
+.txtgallery:nth-child(1) {
+    grid-column-start: span 2;
+    grid-row-start: span 1;
+    margin: auto;
+    padding: 0 100px 0 100px;
+}
+
+.gallery__item:nth-child(2) {
+    grid-column-start: span 1;
+}
+
+.gallery__item:nth-child(3) {
+    grid-column-start: span 1;
+}
+
+.gallery__item:nth-child(4) {
+    grid-column-start: span 1;
+}
+
+.gallery__item:nth-child(5) {
+    grid-column-start: span 1;
+}
+
+@media (min-width:1024px) {
+    .gallery-container{
+    grid-template-columns: repeat(4, 1fr);
+    background: orange;
+}
+
+.gallery__item:nth-child(1) {
+    grid-column-start: span 2;
+    grid-row-start: span 2;
+    margin: auto;
+    padding: 0 15% 0 15%;
+    text-align: center;
+}
+
+.gallery__item:nth-child(2) {
+    grid-column-start: span 1;
+}
+
+.gallery__item:nth-child(3) {
+    grid-column-start: span 1;
+}
+
+.gallery__item:nth-child(4) {
+    grid-column-start: span 1;
+}
+
+.gallery__item:nth-child(5) {
+    grid-column-start: span 1;
+}

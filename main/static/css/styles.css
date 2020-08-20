@@ -18,7 +18,9 @@ h3 {font-size: 30px;}
 h4 {font-size: 24px;}
 h5 {font-size: 18px;}
 h6 {font-size: 14px;}
-p {font-size: 20px; padding-top: 60px;}
+p {font-size: 20px; 
+    line-height: 2em;
+    padding-top: 60px;}
 
 .color2{
     font-size: 48px;
@@ -89,26 +91,21 @@ body{
     background-color: #2d2e32;
 }
 
-#intro{
+.intro{
     text-align: center;
     margin: auto;
-    padding: 40px 15% 40px 15%;
+    padding: 70px 15% 70px 15%;
 }
 
-.contenedor{
-    background-color:rgb(65, 185, 28);
+.second{
+    background-color:#212025;
+    padding: 70px 15% 70px 15%;
 }
 
-.boxleft{
-}
-
-.boxright{
-
-}
-
-.boxright img{
-
-}
+/*
+.clearfix{
+    clear: both;
+}*/
 
 footer{
     height: 60px;
